@@ -321,7 +321,186 @@ textarea {
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
+          .projects__filters {
+            display: flex; /* Mengatur agar tombol berada dalam satu baris */
+            justify-content: center; /* Mengatur agar tombol berada di tengah */
+            margin-bottom: 2rem; /* Jarak bawah untuk filter */
+          }
+          
+          .filter-btn {
+            margin: 0 1rem; /* Jarak horizontal antara tombol */
+          }
+/* Media Queries for Responsive Design */
 
+/* Phone: 0 - 600px */
+@media only screen and (max-width: 37.5em) { /* 600px */
+  .heading-primary {
+    font-size: 4.5rem; 
+  }
+  
+  .heading-sec__main {
+    font-size: 3rem; 
+  }
+
+  .heading-sec__sub {
+    font-size: 1.8rem; 
+  }
+
+  .btn--bg {
+    padding: 1rem 4rem; 
+    font-size: 1.6rem; 
+  }
+
+  .projects__row {
+    grid-template-columns: 1fr; 
+  }
+
+  .contact__btn {
+    width: 100%; 
+  }
+
+  /* Aturan untuk gambar */
+  .projects__row-img {
+    width: 100%; /* Gambar akan mengambil lebar penuh dari kontainer */
+    height: auto; /* Mempertahankan rasio aspek */
+    max-width: 600px; /* Lebar maksimum gambar */
+    max-height:250px; /* Tinggi maksimum gambar */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+  }
+}
+
+/* Tablet Portrait: 600 - 900px */
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) { /* 600px - 900px */
+  .heading-primary {
+    font-size: 5rem; 
+  }
+
+  .heading-sec__main {
+    font-size: 3.5rem; 
+  }
+
+  .heading-sec__sub {
+    font-size: 2rem; 
+  }
+
+  .btn--bg {
+    padding: 1.5rem 6rem; 
+    font-size: 1.8rem; 
+  }
+
+  .projects__row {
+    grid-template-columns: 1fr; 
+  }
+
+  /* Aturan untuk gambar */
+  .projects__row-img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    max-height: 250px; 
+    object-fit: cover; 
+  }
+}
+
+/* Tablet Landscape: 900 - 1200px */
+@media only screen and (min-width: 56.25em) and (max-width: 75em) { /* 900px - 1200px */
+  .heading-primary {
+    font-size: 5.5rem; 
+  }
+
+  .heading-sec__main {
+    font-size: 4rem; 
+  }
+
+  .heading-sec__sub {
+    font-size: 2.2rem; 
+  }
+
+  .btn--bg {
+    padding: 1.5rem 7rem; 
+    font-size: 1.9rem; 
+  }
+
+  .projects__row {
+    grid-template-columns: 1.5fr 1fr; 
+  }
+
+  /* Aturan untuk gambar */
+  .projects__row-img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    max-height: 250px; 
+    object-fit: cover; 
+  }
+}
+
+/* Normal Styles: 1200 - 1800px */
+@media only screen and (min-width: 75em) and (max-width: 112.5em) { /* 1200px - 1800px */
+  .heading-primary {
+    font-size: 6rem; 
+  }
+
+  .heading-sec__main {
+    font-size: 4.5rem; 
+  }
+
+  .heading-sec__sub {
+    font-size: 2.5rem; 
+  }
+
+  .btn--bg {
+    padding: 1.5rem 8rem; 
+    font-size: 2rem; 
+  }
+
+  .projects__row {
+    grid-template-columns: 1.5fr 1fr; 
+  }
+
+  /* Aturan untuk gambar */
+  .projects__row-img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    max-height: 250px; 
+    object-fit: cover; 
+  }
+}
+
+/* Big Desktop: 1800px + */
+@media only screen and (min-width: 112.5em) { /* 1800px + */
+  .heading-primary {
+
+    font-size: 6.5rem; 
+  }
+
+  .heading-sec__main {
+    font-size: 5rem; 
+  }
+
+  .heading-sec__sub {
+    font-size: 2.8rem; 
+  }
+
+  .btn--bg {
+    padding: 1.5rem 9rem; 
+    font-size: 2.1rem; 
+  }
+
+  .projects__row {
+    grid-template-columns: 1.5fr 1fr; 
+  }
+
+  /* Aturan untuk gambar */
+  .projects__row-img {
+    width: 100%; 
+    height: auto; 
+    max-width: 600px; 
+    max-height: 250px; 
+    object-fit: cover; 
+  }
+}
 .contact {
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
